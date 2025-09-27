@@ -17,9 +17,9 @@ the credibility of the re-grading results. This framework not only
 provides a final evaluation score, but also simulates and evaluates
 the effectiveness of the interactive process of "teaching feedbackstudent learning," laying the foundation for building more reliable
 and adaptable online intelligent tutoring systems.
-<div align="center">
+
 <img src=".\image\F1.png">
-<\div>
+
 ## Environment
 conda create -n LLMGrading python=3.10
 
@@ -47,18 +47,18 @@ python rescoring.py --model_path output1/Qwen2.5-14B-Instruct_final_checkpoint  
 python blind_scoring.py --model_path base_models/gpt-oss-120b  --improve_answer_path Qwen2.5-7B-Instruct//Qwen2.5-14B-Instruct_scoring_uq_results_improve_answer.json
 
 ## Scoring Results
-<div align="center">
+
 <img src=".\image\F2.png">
-<\div>
+
 ## Feedback Results
-<div align="center">
+
 <img src=".\image\F3.png">
-<\div>
+
 ## Re-scoring Results
-<div align="center">
+
 <img src=".\image\F4.png">
-<\div>
+
 ## Blind Scoring Results
-<div align="center">
+
 <img src=".\image\F5.png">
-<\div>
+
