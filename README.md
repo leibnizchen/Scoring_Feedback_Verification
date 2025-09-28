@@ -18,7 +18,9 @@ provides a final evaluation score, but also simulates and evaluates
 the effectiveness of the interactive process of "teaching feedbackstudent learning," laying the foundation for building more reliable
 and adaptable online intelligent tutoring systems.
 
-<img src=".\image\F1.png">
+<div align="center">
+  <img src="./image/F1.png" alt="F1" width="50%">
+</div>
 
 ## Environment
 conda create -n LLMGrading python=3.10
@@ -30,35 +32,45 @@ pip install -r requirements.txt
 ## Datasets Download
 SAFDataset: https://huggingface.co/datasets/Short-Answer-Feedback/saf_communication_networks_english
 
-## Create a folder named output, which stores the training model weights, scoring and feedback results.
 
-## lora Fine-tuning
+## Preparation
+Create a folder named output, which stores the training model weights, scoring and feedback results.
+Create three folders named Qwen2.5-1.5B-Instruct, Qwen2.5-3B-Instruct, and Qwen2.5-7B-Instruct to store the revised answers.
+Create two folders named rescore and blindscore to output rescore and blind score respectively.
+
+## Step 1: Lora Fine-tuning model, scoring and feedback
 python lora_scoring.py --model_path base_models/Qwen2.5-14B-Instruct
 
-## Create three folders named Qwen2.5-1.5B-Instruct, Qwen2.5-3B-Instruct, and Qwen2.5-7B-Instruct to store the revised answers.
-## Create two folders named rescore and blindscore to output rescore and blind score respectively
-
-## revising_answer
+## Step 2 : revising_answer
 python revising_answer.py --model_path base_models/Qwen2.5-7B-Instruct --feedback_path output/Qwen2.5-14B-Instruct_scoring_ua_results.json
-## Re-scoring 
+
+## step 3: Re-scoring 
 python rescoring.py --model_path output1/Qwen2.5-14B-Instruct_final_checkpoint  --improve_answer_path Qwen2.5-7B-Instruct//Qwen2.5-14B-Instruct_scoring_uq_results_improve_answer.json
     
-## Blind scoring
+## step 4: Blind scoring
 python blind_scoring.py --model_path base_models/gpt-oss-120b  --improve_answer_path Qwen2.5-7B-Instruct//Qwen2.5-14B-Instruct_scoring_uq_results_improve_answer.json
 
 ## Scoring Results
 
-<img src=".\image\F2.png">
+<div align="center">
+  <img src="./image/F2.png" alt="F2" width="50%">
+</div>
 
 ## Feedback Results
 
-<img src=".\image\F3.png">
+<div align="center">
+  <img src="./image/F3.png" alt="F3" width="50%">
+</div>
 
 ## Re-scoring Results
 
-<img src=".\image\F4.png">
+<div align="center">
+  <img src="./image/F4.png" alt="F4" width="50%">
+</div>
 
 ## Blind Scoring Results
 
-<img src=".\image\F5.png">
+<div align="center">
+  <img src="./image/F5.png" alt="F5" width="50%">
+</div>
 
