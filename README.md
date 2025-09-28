@@ -54,24 +54,24 @@ python blind_scoring.py --model_path base_models/gpt-oss-120b  --improve_answer_
 ## Scoring Results
 
 <div align="center">
-  <img src=".\image\F2.png">
+<img src=".\image\F2.png">
 </div>
 
 ## Feedback Results
 
 <div align="center">
-  <img src=".\image\F3.png">
+<img src=".\image\F3.png">
 </div>
 
 ## Re-scoring Results
 
 <div align="center">
-  <img src=".\image\F4.png">
+<img src=".\image\F4.png">
 </div>
 
 ## Blind Scoring Results
 
 <div align="center">
-  <img src=".\image\F5.png">
+<img src=".\image\F5.png">
 </div>
 
