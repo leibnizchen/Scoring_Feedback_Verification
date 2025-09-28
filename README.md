@@ -41,7 +41,7 @@ Create two folders named rescore and blindscore to output rescore and blind scor
 ## Step 1: Lora Fine-tuning model, scoring and feedback
 python lora_scoring.py --model_path base_models/Qwen2.5-14B-Instruct
 
-## Step 2 : revising_answer
+## Step 2 : Revising answer
 python revising_answer.py --model_path base_models/Qwen2.5-7B-Instruct --feedback_path output/Qwen2.5-14B-Instruct_scoring_ua_results.json
 
 ## step 3: Re-scoring 
