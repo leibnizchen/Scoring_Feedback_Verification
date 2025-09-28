@@ -18,7 +18,7 @@ the effectiveness of the interactive process of "teaching feedbackstudent learni
 and adaptable online intelligent tutoring systems.
 
 <div align="center">
-  <img src="./image/F1.png" alt="F1" width="50%">
+  <img src="./image/F1.png" alt="F1" width="90%">
 </div>
 
 ## Environment
