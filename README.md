@@ -17,9 +17,9 @@ provides a final evaluation score, but also simulates and evaluates
 the effectiveness of the interactive process of "teaching feedbackstudent learning," laying the foundation for building more reliable
 and adaptable online intelligent tutoring systems.
 
-<div align="center">
-  <img src=".\image\F1.png" alt="F1" width="90%">
-</div>
+
+<img src=".\image\F1.png" >
+
 
 ## Environment
 conda create -n LLMScoring python=3.10
