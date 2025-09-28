@@ -17,9 +17,9 @@ provides a final evaluation score, but also simulates and evaluates
 the effectiveness of the interactive process of "teaching feedbackstudent learning," laying the foundation for building more reliable
 and adaptable online intelligent tutoring systems.
 
-
+<div align="center">
 <img src=".\image\F1.png" >
-
+</div>
 
 ## Environment
 conda create -n LLMScoring python=3.10
@@ -73,5 +73,5 @@ python blind_scoring.py --model_path base_models/gpt-oss-120b  --improve_answer_
 
 <div align="center">
   <img src=".\image\F5.png" alt="F5" width="50%">
-</div> -->
+</div>  -->
 
