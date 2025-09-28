@@ -53,7 +53,7 @@ python blind_scoring.py --model_path base_models/gpt-oss-120b  --improve_answer_
 
 ## Scoring Results
 
-<div align="center">
+<!-- <div align="center">
   <img src=".\image\F2.png" alt="F2" width="90%">
 </div>
 
@@ -73,5 +73,5 @@ python blind_scoring.py --model_path base_models/gpt-oss-120b  --improve_answer_
 
 <div align="center">
   <img src=".\image\F5.png" alt="F5" width="50%">
-</div>
+</div> -->
 
