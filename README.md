@@ -3,8 +3,7 @@
 
 With the proliferation of large-scale online learning platforms and
 Web-based assessment tools, AI-powered scoring systems have
-become crucial for scaling education. However, most existing Webdeployed systems merely output scores and feedback, lack an understanding of the critical process by which students learn through
-feedback. This paper addresses this limitation by proposing an integrated "scoring, feedback, revision, re-scoring, and blind scoring,"
+become crucial for scaling education. However, most existing Webdeployed systems merely output scores and feedback, lack an understanding of the critical process by which students learn through feedback. This paper addresses this limitation by proposing an integrated "scoring, feedback, revision, re-scoring, and blind scoring,"
 which implements a comprehensive process from initial scoring to
 learning improvement and objective verification. The framework
 first receives the question, the student’s answer, and the reference
@@ -23,9 +22,9 @@ and adaptable online intelligent tutoring systems.
 </div>
 
 ## Environment
-conda create -n LLMGrading python=3.10
+conda create -n LLMScoring python=3.10
 
-conda activate LLMGrading
+conda activate LLMScoring
 
 pip install -r requirements.txt
 
