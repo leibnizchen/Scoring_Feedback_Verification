@@ -34,9 +34,11 @@ SAFDataset: https://huggingface.co/datasets/Short-Answer-Feedback/saf_communicat
 
 
 ## Preparation
-Create a folder named output, which stores the training model weights, scoring and feedback results.
-Create three folders named Qwen2.5-1.5B-Instruct, Qwen2.5-3B-Instruct, and Qwen2.5-7B-Instruct to store the revised answers.
-Create two folders named rescore and blindscore to output rescore and blind score respectively.
+-Create a folder named output, which stores the training model weights, scoring and feedback results.
+
+-Create three folders named Qwen2.5-1.5B-Instruct, Qwen2.5-3B-Instruct, and Qwen2.5-7B-Instruct to store the revised answers.
+
+-Create two folders named rescore and blindscore to output rescore and blind score respectively.
 
 ## Step 1: Lora Fine-tuning model, scoring and feedback
 python lora_scoring.py --model_path base_models/Qwen2.5-14B-Instruct
