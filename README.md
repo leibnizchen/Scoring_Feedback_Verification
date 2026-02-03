@@ -1,31 +1,7 @@
 # Scoring_Feedback_Verification
 ## Improving from Feedback: A Verifiable LLM Framework for Answer Scoring with Revision and Blind Evaluation
 
-With the increasing application of artificial intelligence in educa-
-tion, automated answer scoring and feedback systems have been
-widely deployed in large-scale assessments and online learning plat-
-forms, significantly improving evaluation efficiency and providing
-personalized instructional support. However, most existing systems
-remain confined to output scores and feedback. They lack an un-
-derstanding of the critical process by which students learn through
-feedback. This paper addresses this limitation by proposing an
-integrated integrated scoring–feedback–revision–rescoring–blind-
-scoring framework, which implements a comprehensive process
-from initial scoring to learning improvement and objective verifi-
-cation. The framework first receives the question, the student’s an-
-swer, and the reference answers. A large language model fine-tuned
-with LoRA generates initial scores and feedback. Subsequently,
-Qwen2.5 models of varying sizes simulate students in three cate-
-gories: poor, average, and excellent. Based on the feedback, multiple
-revised answers are generated and re-scored by the same scoring
-model to quantify the gains from the feedback. Independent blind
-grading also objectively evaluates the revised answers without prior
-knowledge to verify the credibility of the re-grading results. This
-framework goes beyond producing a final score. It explicitly simu-
-lates the feedback-driven learning process and evaluates whether
-feedback leads to measurable answer improvement, laying the foun-
-dation for building more reliable and adaptable intelligent tutoring
-systems (ITS).
+With the increasing application of artificial intelligence in education, automated answer scoring and feedback systems have been widely deployed in large-scale assessments and online learning platforms, significantly improving evaluation efficiency and providing personalized instructional support. However, most existing systems remain confined to output scores and feedback. They lack an understanding of the critical process by which students learn through feedback. This paper addresses this limitation by proposing an integrated integrated scoring–feedback–revision–rescoring–blind-scoring framework, which implements a comprehensive process from initial scoring to learning improvement and objective verification. The framework first receives the question, the student's answer, and the reference answers. A large language model fine-tuned with LoRA generates initial scores and feedback. Subsequently, Qwen2.5 models of varying sizes simulate students in three categories: poor, average, and excellent. Based on the feedback, multiple revised answers are generated and re-scored by the same scoring model to quantify the gains from the feedback. Independent blind grading also objectively evaluates the revised answers without prior knowledge to verify the credibility of the re-grading results. This framework goes beyond producing a final score. It explicitly simulates the feedback-driven learning process and evaluates whether feedback leads to measurable answer improvement, laying the foundation for building more reliable and adaptable intelligent tutoring systems (ITS). 
 
 <div align="center">
 <img src=".\image\F1.png" >
