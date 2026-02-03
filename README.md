@@ -4,7 +4,7 @@
 With the increasing application of artificial intelligence in education, automated answer scoring and feedback systems have been widely deployed in large-scale assessments and online learning platforms, significantly improving evaluation efficiency and providing personalized instructional support. However, most existing systems remain confined to output scores and feedback. They lack an understanding of the critical process by which students learn through feedback. This paper addresses this limitation by proposing an integrated integrated scoring–feedback–revision–rescoring–blind-scoring framework, which implements a comprehensive process from initial scoring to learning improvement and objective verification. The framework first receives the question, the student's answer, and the reference answers. A large language model fine-tuned with LoRA generates initial scores and feedback. Subsequently, Qwen2.5 models of varying sizes simulate students in three categories: poor, average, and excellent. Based on the feedback, multiple revised answers are generated and re-scored by the same scoring model to quantify the gains from the feedback. Independent blind grading also objectively evaluates the revised answers without prior knowledge to verify the credibility of the re-grading results. This framework goes beyond producing a final score. It explicitly simulates the feedback-driven learning process and evaluates whether feedback leads to measurable answer improvement, laying the foundation for building more reliable and adaptable intelligent tutoring systems (ITS). 
 
 <div align="center">
-<img src=".\image\F1.png" >
+<img src=".\Image\F1.png" >
 </div>
 
 ## Environment
@@ -40,24 +40,24 @@ python blind_scoring.py --model_path base_models/gpt-oss-120b  --improve_answer_
 ## Scoring Results
 
 <div align="center">
-<img src=".\image\F2.png">
+<img src=".\Image\T1.png">
 </div>
 
 ## Feedback Results
 
 <div align="center">
-<img src=".\image\F3.png">
+<img src=".\Image\T2.png">
 </div>
 
 ## Re-scoring Results
 
 <div align="center">
-<img src=".\image\F4.png">
+<img src=".\Image\T3.png">
 </div>
 
 ## Blind Scoring Results
 
 <div align="center">
-<img src=".\image\F5.png">
+<img src=".\Image\F2.png">
 </div>
 
